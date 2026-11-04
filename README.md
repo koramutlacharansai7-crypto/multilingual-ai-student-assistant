@@ -144,22 +144,15 @@ This project provides practical experience with:
 - Environment variable and API credential management
 - Cloud deployment and GitHub version control
 
-## 👨‍💻 Project Status
-
-**Status:** Deployed and working.
-
-The application is available through the live demo link above.
-
-## 📬 Feedback
-
-Suggestions and feedback for improving the application are welcome.
 ## 📸 Application Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](p1.png)
 
 ### AI Chat
-![AI Chat](screenshots/ai-chat.png)
+![AI Chat](pai.png)
 
+### Voice Assistant
+![Voice Assistant](p%20voice%20.png)
 ### Voice Assistant
 ![Voice Assistant](screenshots/voice-assistant.png)
