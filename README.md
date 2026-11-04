@@ -154,5 +154,4 @@ This project provides practical experience with:
 
 ### Voice Assistant
 ![Voice Assistant](p%20voice%20.png)
-### Voice Assistant
-![Voice Assistant](screenshots/voice-assistant.png)
+![Voice Assistant](<p voice .png>)
