@@ -4,3 +4,4 @@ python-dotenv
 streamlit-mic-recorder
 gnani-vachana
 google-genai
+supabase
