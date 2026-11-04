@@ -153,3 +153,13 @@ The application is available through the live demo link above.
 ## 📬 Feedback
 
 Suggestions and feedback for improving the application are welcome.
+## 📸 Application Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### AI Chat
+![AI Chat](screenshots/ai-chat.png)
+
+### Voice Assistant
+![Voice Assistant](screenshots/voice-assistant.png)
