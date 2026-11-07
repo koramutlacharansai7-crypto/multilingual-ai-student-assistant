@@ -856,42 +856,42 @@ if selected_feature in ["chat", "voice"]:
         st.header("🎙️ Voice Assistant")
         st.write("Speak your question and receive an AI answer.")
 
-
-
 if selected_feature == "chat":
 
-    for index, message in enumerate(st.session_state.messages):
+    for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
     question = st.chat_input("Type your question here...")
 
-    if question:
+    if question and question.strip():
+
         st.session_state.messages.append({
             "role": "user",
-            "content": question,
+            "content": question.strip(),
         })
 
         try:
             with st.spinner("Multilingual AI is thinking..."):
-                answer = generate_ai_answer(question, language)
+                answer = generate_ai_answer(question.strip(), language)
 
             st.session_state.messages.append({
                 "role": "assistant",
                 "content": answer,
             })
 
+            st.rerun()
+
         except Exception as error:
             st.error(f"Answer generation failed: {error}")
-
-    speech_languages = {
-        "English": "en",
-        "Telugu": "te",
-        "Tamil": "ta",
-        "Hindi": "hi",
-        "Kannada": "kn",
-        "Malayalam": "ml",
-    }
+speech_languages = {
+    "English": "en",
+    "Telugu": "te",
+    "Tamil": "ta",
+    "Hindi": "hi",
+    "Kannada": "kn",
+    "Malayalam": "ml",
+}
 
 if selected_feature == "voice":
     st.subheader("🎤 Ask by voice")
@@ -902,7 +902,6 @@ if selected_feature == "voice":
         value=True,
         key="auto_speak",
     )
-
     # Display previous conversation
     for message in st.session_state.voice_messages:
         with st.chat_message(message["role"]):
